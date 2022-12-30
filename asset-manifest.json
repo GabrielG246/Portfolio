@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.91f8b6a3.css",
+    "main.js": "/Portfolio/static/js/main.52804da4.js",
+    "static/media/weatherApp-img.PNG": "/Portfolio/static/media/weatherApp-img.e98dedfc20bdfca8f62c.PNG",
+    "static/media/react-logo.png": "/Portfolio/static/media/react-logo.8a6fc0a24a800d1e0f4a.png",
+    "static/media/sass-logo.png": "/Portfolio/static/media/sass-logo.7cdbf6b5889c42b3e490.png",
+    "static/media/scrum-logo.png": "/Portfolio/static/media/scrum-logo.73e6146a3ff53b0d54c6.png",
+    "static/media/js-logo.jpg": "/Portfolio/static/media/js-logo.5648ae0aeb0182cbd857.jpg",
+    "static/media/css.logo.png": "/Portfolio/static/media/css.logo.84de5dab5fab27f4161c.png",
+    "static/media/Logo-M1.png": "/Portfolio/static/media/Logo-M1.9b24d797f587ae53c729.png",
+    "static/media/html-logo.png": "/Portfolio/static/media/html-logo.2c6a71b184b518b01b9a.png",
+    "static/media/nodeJs-logo.png": "/Portfolio/static/media/nodeJs-logo.a4713ff2ca054bf23788.png",
+    "index.html": "/Portfolio/index.html",
+    "static/media/wave-3.svg": "/Portfolio/static/media/wave-3.fe7351099474105e766d.svg",
+    "static/media/wave-4.svg": "/Portfolio/static/media/wave-4.27e9c88c3e67b4607175.svg",
+    "main.91f8b6a3.css.map": "/Portfolio/static/css/main.91f8b6a3.css.map",
+    "main.52804da4.js.map": "/Portfolio/static/js/main.52804da4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91f8b6a3.css",
+    "static/js/main.52804da4.js"
+  ]
+}
