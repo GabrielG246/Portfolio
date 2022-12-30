@@ -1,0 +1,29 @@
+.navList__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+    position: relative;
+    left: 25%;
+    font-size: 18px;
+
+}
+
+.navList__item{
+    position: fixed;
+    top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navList__item:hover{
+    font-size: 19px;
+}
+
+@media (max-width: 970px){
+    .navList__container{
+        display: none;
+    }
+}
+

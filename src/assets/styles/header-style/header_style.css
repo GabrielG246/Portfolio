@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=== COMPONENTE ===*/
+.index__header_comp{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*=== NAVEGADOR ===*/
+.index__header{
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(180deg, #5086c1 0%, #14385f 100%);;
+    position: relative; 
+    border-bottom: solid 2px #14385f;
+    margin-bottom: 0;
+}
+
+.index__header_nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    z-index: 101;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+}
+
+.nav__active{
+    background-color:rgba(80,134,193,1);
+}
+
+.index__header_logo{
+    width: 140px;
+    height: 100px;
+}
+
+
+
+
+
+/*=== WAVES ===*/
+
+
+.index__header_wave-1{
+    width: 100%;
+    height: 200px;
+    background-image: url('../../img/wave-3.svg');
+    background-size: 1000px;
+    animation: wave 15s linear infinite;
+    position: absolute;
+    z-index: 100;
+    overflow-x: hidden;
+    border-top: solid 2px #14385f;
+}
+
+
+.index__header_wave-2{
+    width: 100%;
+    height: 200px;
+    background-image: url('../../img/wave-4.svg');
+    background-size: 1000px;
+    animation: wave-reverse 7s linear infinite;
+    position: absolute;
+    z-index: 99;
+    overflow-x: hidden;
+    background-color: #6494C8;
+    border-top: solid 1px #14385f;
+}
+
+/*===ANIMACIONES===*/
+@keyframes wave {
+0%{
+    background-position-x: 0;
+}
+
+100%{
+    background-position-x: 1000px ;
+}
+}
+
+@keyframes wave-reverse{
+    0%{
+        background-position-x: 0;
+    }
+    
+    100%{
+        background-position-x: -1000px ;
+    }
+}
+

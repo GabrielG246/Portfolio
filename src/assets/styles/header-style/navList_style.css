@@ -1,0 +1,14 @@
+.navList__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .navList__container{
+        display: none;
+    }
+}

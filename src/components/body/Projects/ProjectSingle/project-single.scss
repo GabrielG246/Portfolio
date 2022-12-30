@@ -1,0 +1,98 @@
+.project__container{
+    position: relative;
+    border: solid 1px rgba(65, 65, 206, 0.51);
+    background-color:rgba(255, 255, 255, 0.715);
+    border-radius: 10px;
+    width: 310px;
+    height: 230px;
+    margin-top: 30px;
+}
+
+.project__layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px green;
+}
+.project__header{
+    width: 100%;
+    height: 25px;
+    position: relative;
+
+    & p{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        border-radius: 50%;
+    }
+    :nth-child(1){
+        border: solid 1px rgb(0, 0, 0);
+        background-color: rgb(241, 59, 59);
+        left: 10px;
+    }
+    :nth-child(2){
+        border: solid 1px rgb(0, 0, 0);
+        background-color: rgb(191, 191, 43);
+        left: 25px;
+    }
+    :nth-child(3){
+        border: solid 1px rgb(0, 0, 0);
+        background-color: rgb(40, 146, 40);
+        left: 40px;
+    }
+}
+.project__image{
+    width: 300px;
+    height: 160px;
+}
+
+.project__overlay{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #92b5ddc7;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+
+.project__container:hover .project__overlay {
+    width: 100%;
+}
+.project__container:hover .project__image{
+    filter: blur(2px);
+}
+
+
+.project__url{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    background-color: rgba(201, 201, 201, 0.485);
+    color: rgb(17, 82, 122);
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project__title{
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: rgb(17, 82, 122);
+}

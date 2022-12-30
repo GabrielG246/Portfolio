@@ -1,0 +1,16 @@
+.nav__list_element{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list_element a {
+    text-decoration: none;
+    color: white;
+    font-style: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+

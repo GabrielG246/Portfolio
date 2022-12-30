@@ -1,0 +1,766 @@
+.body__habilidades_container{
+    height: 600px;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body__skills_text{
+  transition-property: left, position;
+  transition-duration: 0.5s;
+  left: 0px;
+  position: relative;
+}
+
+.body__text{
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  color: rgb(255,255,255);
+  text-shadow: 
+    -1px -1px 0px rgb(84, 134, 227),
+    1px -1px 0px rgb(84, 134, 227),
+    1px 1px 0px rgb(84, 134, 227),
+    -1px 1px 0px rgb(84, 134, 227);
+    position: absolute;
+    cursor: default;
+
+    &::selection{
+      background-color: transparent;
+      color: rgb(255,255,255);
+    }
+    
+}
+
+
+.body__text_wave{
+  color: rgb(208, 205, 205);
+  animation: textWave 3s ease-in-out infinite;
+  font-size: 40px;
+  font-family: 'Rubik', sans-serif;
+  cursor: default;
+
+  &::selection{
+    background-color: transparent;
+    color: rgb(208, 205, 205);
+  }
+  
+}
+
+.body__habilidades{
+    width: 100%;
+    max-width: 562px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 81px;
+    grid-column-gap: 0px;
+    position: relative;
+    left: 0;
+    font-family: 'Concert One', cursive;
+    margin-top: 70px;
+    transition-property: left, position;
+    transition-duration: 1s;
+}
+
+
+
+.body__skill{
+    /*===Hexagono===*/
+  width: 140px;
+  height: 80px;
+  background: rgb(255,255,255);
+  background-position: tran ;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Secular One', monospace;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 40px solid rgb(255,255,255);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 40px solid rgb(255,255,255);
+  }
+}
+
+  .skills__outViewport{
+    position: absolute;
+    left: -105%;
+  }
+
+
+  .body__skill p {
+    display: none;
+    color: white;
+    text-shadow: 
+    -1px -1px 0px rgb(0, 0, 0),
+    1px -1px 0px rgb(0, 0, 0),
+    1px 1px 0px rgb(0, 0, 0),
+    -1px 1px 0px rgb(0, 0, 0);
+    cursor: default;
+  }
+
+
+
+
+
+  /*========== HEXAGONOS INDIVIDUALES ==========*/
+  /*SCRUM*/
+  .body__skill:nth-child(1){
+    position: absolute;
+    left: 352px;
+    top: 241.5px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    z-index: 98;
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+  /*JAVA SCRIPT*/
+  .body__skill:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 70.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 98;
+    
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+  /*HTML*/
+  .body__skill:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 211px;
+    z-index: 98;
+    flex-direction: column;
+    align-items: center;
+    
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+  /*CSS*/
+  .body__skill:nth-child(4){
+    position: absolute;
+    top: 0  ;
+    left: 352px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+/*REACT*/
+.body__skill:nth-child(5){
+    position: absolute;
+    left: 141px;
+    top: 121px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+
+}
+
+
+/*MYSQL*/
+  .body__skill:nth-child(6){
+    position: absolute;
+    left: 282px;
+    top: 121px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+/*GIT*/
+  .body__skill:nth-child(7){
+    position: absolute;
+    left: 70.5px;
+    top: 241.5px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    & .image__container{
+      width: 50%;
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+
+  /*SASS*/
+  .body__skill:nth-child(8){
+    position: absolute;
+    left: 422.5px;
+    top: 121px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    z-index: 98;
+    transition-property: top, left;
+    transition-duration: 1s;
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+  /*===NODE JS===*/
+  .body__skill:nth-child(9){
+    position: absolute;
+    left: 0px;
+    top: 121px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    z-index: 98;
+    transition-property: top, left;
+    transition-duration: 1s;
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+  /*REST API*/
+
+  .body__skill:nth-child(10){
+    position: absolute;
+    left: 211px;
+    top: 241.5px;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    z-index: 98;
+
+    & .image__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    & .image__container img{
+      object-fit: contain;
+      z-index: 99;
+    }
+
+    & p {
+      z-index: 99;
+      position: absolute;
+    }
+  }
+
+  /*============= FINAL DE EXAGONOS =============*/
+
+
+
+
+
+  /*============= HOVER ======================*/
+  .body__skill:hover{
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 40px solid rgba(88,147,217,1);
+      animation: hexagonalColorBottom 1s;
+      animation-delay:1ms;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-top: 40px solid rgba(135,193,209,1);
+      animation: hexagonalColorTop 1s;
+      animation-delay:1ms;
+    }
+
+    & p {
+      display: flex;
+      font-size: 20px;
+      color: white;
+    }
+
+    & img {
+      filter: blur(1px);
+    }
+
+    & {
+      animation: hexagonalColor 1s;
+      animation-delay:2ms;
+      background: linear-gradient(180deg, rgba(88,147,217,1) 40%, rgba(135,193,209,1) 100%);
+    }
+
+  }
+
+
+
+
+
+  /*===== MEDIA QUERIES =====*/
+
+@media(max-width:615px){
+  .body__habilidades{
+    width: 422px;
+  }
+  .body__skill{
+    /*JAVA SCRIPT*/
+    &:nth-child(2){
+      top: 0px;
+      left: 0px;
+    }
+    /*HTML*/
+    &:nth-child(3){
+      top: 0px;
+      left: 141px;
+    }
+    /*CSS*/
+      &:nth-child(4){
+        top: 0px;
+        left: 282px;
+      }
+      
+      /*REACT*/
+      &:nth-child(5){
+        top: 120.5px;
+        left: 71px;
+      }
+    /*MYSQL*/
+      &:nth-child(6){
+        top: 120.5px;
+        left: 211.5px;
+      }
+      
+      /*GIT*/
+      &:nth-child(7){
+        top: 241px;
+        left: 0px;
+      }
+      /*SASS*/
+      &:nth-child(8){
+        top: 241px;
+        left: 282px;
+      }
+      /*===NODE JS===*/
+      &:nth-child(9){      
+        top: 241px;
+        left: 141px;
+      }
+      
+      /*REST API*/
+      &:nth-child(10){
+        top: 362px;
+        left: 71px;
+      }
+      /*SCRUM*/
+        &:nth-child(1){
+          top: 362px;
+          left: 211.5px;
+        }
+    }
+  }
+
+@media(max-width:500px){
+  .body__habilidades{
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .body__skill{
+  width: 100px;
+  height: 50px;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid rgb(255,255,255);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 30px solid rgb(255,255,255);
+  }
+  &:hover{
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 30px solid rgba(88,147,217,1);
+      animation: hexagonalColorBottom435 1s;
+      animation-delay:1ms;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 30px solid rgba(135,193,209,1);
+      animation: hexagonalColorTop435 1s;
+      animation-delay:1ms;
+    }
+  }
+}
+
+.body__habilidades_container{
+  min-height: 450px;
+  height: 450px;
+}
+
+.body__skill{
+  /*JAVA SCRIPT*/
+  &:nth-child(2){
+      top: 0;
+      left: 0;
+    }
+    /*HTML*/
+    &:nth-child(3){
+      top: 0;
+      left: 101px;
+    }
+    /*CSS*/
+    &:nth-child(4){
+      top: 0px;
+      left: 201.4px;
+    }
+  /*REACT*/
+    &:nth-child(5){
+      top: 80.5px;
+      left: 50.5px;
+    }
+    /*MYSQL*/
+    &:nth-child(6){
+      top: 80.5px;
+      left: 151px;
+    }
+    /*GIT*/
+    &:nth-child(7){
+      top: 160.5px;
+      left: 0;
+    }
+    /*SASS*/
+    &:nth-child(8){
+      top: 160.5px;
+      left: 201.4px;
+    }
+    /*===NODE JS===*/
+    &:nth-child(9){      
+      top: 160.5px;
+      left: 101px;
+    }
+    /*REST API*/
+    &:nth-child(10){
+      top: 240.5px;
+      left: 50.5px;
+    }
+    /*SCRUM*/
+      &:nth-child(1){
+        top: 240.5px;
+        left: 151px;
+      }
+    
+    & p{
+      text-align: center;
+    }
+  }
+}
+
+
+  /*===== ANIMACIONES =====*/
+
+@keyframes textWave{
+  0%, 100%{
+  clip-path: polygon(
+    0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%
+  );
+  }
+
+  50%{
+    clip-path: polygon(
+      0% 60%, 15% 65% , 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%
+    );
+  }
+}
+
+@keyframes hexagonalColor{
+  0%{
+    background: rgb(255, 255, 255);
+  }
+
+  100%{
+    background: linear-gradient(180deg, rgba(88,147,217,1) 40%, rgba(135,193,209,1) 100%);;
+  }
+}
+
+@keyframes hexagonalColorTop{
+  0%{
+    border-top: 40px solid rgb(255, 255, 255);
+  }
+  100%{
+    border-top: 40px solid rgba(135,193,209,1);
+  }
+}
+
+@keyframes hexagonalColorBottom{
+  0%{
+    border-bottom: 40px solid rgb(255, 255, 255);
+  }
+  100%{
+    border-bottom: 40px solid rgba(88,147,217,1);
+  }
+}
+
+
+@keyframes hexagonalColorTop435{
+  0%{
+    border-top: 30px solid rgb(255, 255, 255);
+  }
+  100%{
+    border-top: 30px solid rgba(135,193,209,1);
+  }
+}
+
+@keyframes hexagonalColorBottom435{
+  0%{
+    border-bottom: 30px solid rgb(255, 255, 255);
+  }
+  100%{
+    border-bottom: 30px solid rgba(88,147,217,1);
+  }
+}
+

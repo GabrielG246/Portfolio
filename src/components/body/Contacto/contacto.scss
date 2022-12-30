@@ -1,0 +1,166 @@
+.contacto__section_container{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+    transition-property: left, position;
+    transition-duration: 1s;
+
+    .contacto__title_container{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    & .contacto__title{
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        color: rgb(255,255,255);
+        text-shadow: 
+            -1px -1px 0px rgb(84, 134, 227),
+            1px -1px 0px rgb(84, 134, 227),
+            1px 1px 0px rgb(84, 134, 227),
+            -1px 1px 0px rgb(84, 134, 227);
+            position: absolute;
+            cursor: default;
+        
+            &::selection{
+            background-color: transparent;
+            color: rgb(255,255,255);
+            }
+        }
+            & .contacto__title_wave{
+        color: rgb(208, 205, 205);
+        animation: textWave 3s ease-in-out infinite;
+        font-size: 40px;
+        font-family: 'Rubik', sans-serif;
+        cursor: default;
+        
+        &::selection{
+            background-color: transparent;
+            color: rgb(208, 205, 205);
+        }
+        }
+    }
+
+
+    .contactos__grid_container{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        margin-top: 50px;
+        justify-items: center;
+    }
+
+    & .contacto__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        position: relative;   
+
+
+        & .contacto__icon{
+            width: 90px;
+            height: 90px;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(215, 212, 212);
+            position: relative;
+
+
+            & .contacto__font_icon{
+                z-index: 100;
+            }
+
+            & .contacto__icon_bg{
+                position: absolute;
+                background-color: rgba(80, 135, 193, 0.674);
+                width: 70px;
+                height: 70px;
+                z-index: 99;
+                border-radius: 10px;
+            }
+        }
+        & .contacto__info{
+            display: none;
+            background-color: rgb(215, 212, 212);
+            height: 87.5px;
+            border-radius: 0 10px 10px 0;
+            width: 0px;
+            align-items: center;
+            position: absolute;
+            left: 77px;
+            padding: 0 20px 0 20px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+        
+            & .contacto__info_icon{
+                display: flex;
+                margin-left: 4px;
+            }
+            & a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+        }}}
+
+        & .contacto__clicked{
+            justify-self: center;
+            position: relative;
+            left: -50%;
+    
+            & .contacto__info{
+                display: flex;
+                animation: contactInfoOn 0.1s linear;
+                width: auto;
+            }
+        }
+}
+
+.contacto__outViewport{
+    position: absolute;
+    left: -105%;
+    top: 1800px;
+}
+
+//<==== ANIMATIONS ====>//
+@keyframes contactInfoOn {
+    0%{width: 0%;}
+    100%{width: 100%}
+}
+
+//<==== MEDIA QUERIES ====>//
+@media (max-width:1350px){
+    .contactos__grid_container{
+        grid-template-rows: repeat(4,auto);
+        padding-left: 10%;
+        grid-gap: 10px;
+        justify-content: center;
+        padding-right: 60px;
+
+        :nth-child(1){
+            grid-row: 1/2;
+        }
+        :nth-child(2){
+            grid-row: 2/3;
+        }
+        :nth-child(3){
+            grid-row: 3/4;
+        }
+        :nth-child(4){
+            grid-row: 4/5;
+        }
+    }
+}
+
+@media (max-width:420px){
+
+}
