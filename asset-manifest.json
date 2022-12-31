@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.91f8b6a3.css",
-    "main.js": "/Portfolio/static/js/main.52804da4.js",
+    "main.js": "/Portfolio/static/js/main.d129631b.js",
     "static/media/weatherApp-img.PNG": "/Portfolio/static/media/weatherApp-img.e98dedfc20bdfca8f62c.PNG",
     "static/media/react-logo.png": "/Portfolio/static/media/react-logo.8a6fc0a24a800d1e0f4a.png",
     "static/media/sass-logo.png": "/Portfolio/static/media/sass-logo.7cdbf6b5889c42b3e490.png",
@@ -15,10 +15,10 @@
     "static/media/wave-3.svg": "/Portfolio/static/media/wave-3.fe7351099474105e766d.svg",
     "static/media/wave-4.svg": "/Portfolio/static/media/wave-4.27e9c88c3e67b4607175.svg",
     "main.91f8b6a3.css.map": "/Portfolio/static/css/main.91f8b6a3.css.map",
-    "main.52804da4.js.map": "/Portfolio/static/js/main.52804da4.js.map"
+    "main.d129631b.js.map": "/Portfolio/static/js/main.d129631b.js.map"
   },
   "entrypoints": [
     "static/css/main.91f8b6a3.css",
-    "static/js/main.52804da4.js"
+    "static/js/main.d129631b.js"
   ]
 }
